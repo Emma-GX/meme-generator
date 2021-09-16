@@ -1,4 +1,9 @@
+body {
+    display: inline-block;
+}
+
 h1 {
+    font-size: 45px;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -9,17 +14,13 @@ h4 {
 }
 
 form {
+    margin-left: 5%;
     width: 90vw;
-    margin: auto;
+    text-align: left;
 }
 
 label {
     font-size: 18px;
-}
-
-.meme-info {
-    /* display: table;
-        text-align: right; */
 }
 
 input {
@@ -30,8 +31,6 @@ input {
     border-radius: 5px;
     height: 30px;
 }
-
-
 
 button {
     text-align: center;
