@@ -42,3 +42,44 @@ button {
 img {
     width: 300px;
 }
+
+.container {
+    position: relative; 
+    text-align: center; 
+    width: 300px;
+    margin-right: 0;
+}
+  
+ /* Top text */
+.top {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    -webkit-text-stroke: 1px #23430C;
+	text-shadow: -1px 1px 2px #23430C,
+				  1px 1px 2px #23430C,
+				  1px -1px 0 #23430C,
+				  -1px -1px 0 #23430C;
+    top:5%;
+    left:0; 
+    right:0;
+    text-align:center;
+  }
+  
+  /* Bottom text */
+  .bottom {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    -webkit-text-stroke: 1px #23430C;
+	text-shadow: -1px 1px 2px #23430C,
+				  1px 1px 2px #23430C,
+				  1px -1px 0 #23430C,
+				  -1px -1px 0 #23430C;
+    bottom: 10%;
+    left:0; 
+    right:0;
+    text-align:center;
+  }
