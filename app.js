@@ -29,17 +29,18 @@ form.addEventListener("submit", (e) => {
 	// Creates an empty img tag
 	let newMeme = document.createElement("img");
 	newMeme.src = imageInput.value;
+    imageInput.value = '';
 	memeDiv.append(newMeme);
 
     // Creates empty paragraph tag
 	let topText = document.createElement("p");
 	topText = topTextInput.value;
-    console.log(topText);
+    topTextInput.value = '';
 	topTextDiv.append(topText);
 
     // Creates empty paragraph tag
 	let bottomText = document.createElement("p");
 	bottomText = bottomTextInput.value;
-	console.log(bottomText);
+	bottomTextInput.value = '';
 	bottomTextDiv.append(bottomText);});
 // }

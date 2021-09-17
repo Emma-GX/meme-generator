@@ -1,5 +1,7 @@
 body {
     display: inline-block;
+    background-color: rgb(106, 170, 212);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -22,6 +24,8 @@ form {
 
 label {
     font-size: 18px;
+    font-weight: bolder;
+    
 }
 
 input {
@@ -37,6 +41,12 @@ button {
     text-align: center;
     display: block;
     margin: 0 auto;
+    background: linear-gradient(#3742a8, #d2d5f3);
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size: 18px;
+    
 }
 
 img {
@@ -78,7 +88,7 @@ img {
 				  1px 1px 2px #23430C,
 				  1px -1px 0 #23430C,
 				  -1px -1px 0 #23430C;
-    bottom: 10%;
+    bottom: 5%;
     left:0; 
     right:0;
     text-align:center;
