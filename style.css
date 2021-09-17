@@ -51,13 +51,16 @@ button {
 
 img {
     width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .container {
     position: relative; 
     text-align: center; 
     width: 300px;
-    margin-right: 0;
+    margin-right: 20px;
+    display: inline-block;
 }
   
  /* Top text */
