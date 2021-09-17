@@ -91,8 +91,16 @@ img {
 				  1px 1px 2px #23430C,
 				  1px -1px 0 #23430C,
 				  -1px -1px 0 #23430C;
-    bottom: 5%;
+    bottom: 14%;
     left:0; 
     right:0;
     text-align:center;
+    padding-bottom: 15px;
+  }
+
+  .delete {
+      width: 300px;
+      text-align: center;
+    display: block;
+    margin: 0 auto;
   }
