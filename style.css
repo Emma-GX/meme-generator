@@ -17,6 +17,7 @@ form {
     margin-left: 5%;
     width: 90vw;
     text-align: left;
+    margin-bottom: 50px;
 }
 
 label {
@@ -36,4 +37,8 @@ button {
     text-align: center;
     display: block;
     margin: 0 auto;
+}
+
+img {
+    width: 300px;
 }
