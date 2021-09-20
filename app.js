@@ -52,16 +52,12 @@ form.addEventListener("submit", (e) => {
 	deleteMeme.innerText = "Delete";
 	deleteMeme.className = "delete";
     memeDiv.append(deleteMeme);
+
+    
+    memeDiv.addEventListener('click', function(e) {
+        console.log(e.target.className);
+        if (e.target.className === "delete") {
+            e.target.parentElement.remove();
+        }
+    });
 });
-
-
-
-deleteMeme.addEventListener('click', (e) => {
-    console.log(e.target.className);
-    if (e.target.tagName === "BUTTON" && e.target.className === "delete") {
-        e.target.parentElement.remove();
-    }
-});
-
-
-
