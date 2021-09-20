@@ -8,10 +8,7 @@ const topTextInput = document.querySelector("#top-text");
 const bottomTextInput = document.querySelector("#bottom-text");
 
 
-let memeDiv = document.createElement("div");
-let deleteMeme = document.createElement("button");
 
-// function getMemeOnSubmit() {
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
 
@@ -49,20 +46,16 @@ form.addEventListener("submit", (e) => {
 	bottomTextDiv.append(bottomText);
 
     // Creates the button to delete
-	// deleteMeme = document.createElement("button");
+    let deleteMeme = document.createElement("button");
 	deleteMeme.innerText = "Delete";
 	deleteMeme.className = "delete";
     memeDiv.append(deleteMeme);
+
+    
+    memeDiv.addEventListener('click', function(e) {
+        console.log(e.target.className);
+        if (e.target.className === "delete") {
+            e.target.parentElement.remove();
+        }
+    });
 });
-
-
-
-deleteMeme.addEventListener('click', (e) => {
-    console.log(e.target.className);
-    if (e.target.tagName === "BUTTON" && e.target.className === "delete") {
-        e.target.parentElement.remove();
-    }
-});
-
-
-

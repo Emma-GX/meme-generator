@@ -95,7 +95,8 @@ img {
     left:0; 
     right:0;
     text-align:center;
-    padding-bottom: 15px;
+    bottom: 15%;
+    /* padding-bottom: 15px; */
   }
 
   .delete {
