@@ -7,8 +7,6 @@ const imageInput = document.querySelector("#image");
 const topTextInput = document.querySelector("#top-text");
 const bottomTextInput = document.querySelector("#bottom-text");
 
-
-
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
 
@@ -16,46 +14,45 @@ form.addEventListener("submit", (e) => {
 	memeDiv = document.createElement("div");
 	memeDiv.classList.add("container");
 	document.body.appendChild(memeDiv);
-   
-    // Creates div for top text
-    let topTextDiv = document.createElement('div');
-    topTextDiv.classList.add("top");
-    memeDiv.append(topTextDiv);
-    
-    // Creates div for bottom text
-    let bottomTextDiv = document.createElement('div');
-    bottomTextDiv.classList.add("bottom");
-    memeDiv.append(bottomTextDiv);
+
+	// Creates div for top text
+	let topTextDiv = document.createElement("div");
+	topTextDiv.classList.add("top");
+	memeDiv.append(topTextDiv);
+
+	// Creates div for bottom text
+	let bottomTextDiv = document.createElement("div");
+	bottomTextDiv.classList.add("bottom");
+	memeDiv.append(bottomTextDiv);
 
 	// Creates an empty img tag
 	let newMeme = document.createElement("img");
 	newMeme.src = imageInput.value;
-    imageInput.value = '';
+	imageInput.value = "";
 	memeDiv.append(newMeme);
 
-    // Creates empty paragraph tag
+	// Creates empty paragraph tag
 	let topText = document.createElement("p");
 	topText = topTextInput.value;
-    topTextInput.value = '';
+	topTextInput.value = "";
 	topTextDiv.append(topText);
 
-    // Creates empty paragraph tag
+	// Creates empty paragraph tag
 	let bottomText = document.createElement("p");
 	bottomText = bottomTextInput.value;
-	bottomTextInput.value = '';
+	bottomTextInput.value = "";
 	bottomTextDiv.append(bottomText);
 
-    // Creates the button to delete
-    let deleteMeme = document.createElement("button");
+	// Creates the button to delete
+	let deleteMeme = document.createElement("button");
 	deleteMeme.innerText = "Delete";
 	deleteMeme.className = "delete";
-    memeDiv.append(deleteMeme);
+	memeDiv.append(deleteMeme);
 
-    
-    memeDiv.addEventListener('click', function(e) {
-        console.log(e.target.className);
-        if (e.target.className === "delete") {
-            e.target.parentElement.remove();
-        }
-    });
+	memeDiv.addEventListener("click", function (e) {
+		console.log(e.target.className);
+		if (e.target.className === "delete") {
+			e.target.parentElement.remove();
+		}
+	});
 });
