@@ -8,8 +8,6 @@ const topTextInput = document.querySelector("#top-text");
 const bottomTextInput = document.querySelector("#bottom-text");
 
 
-let memeDiv;
-let deleteMeme = document.createElement("button");
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
@@ -48,7 +46,7 @@ form.addEventListener("submit", (e) => {
 	bottomTextDiv.append(bottomText);
 
     // Creates the button to delete
-    // deleteMeme = document.createElement("button");
+    let deleteMeme = document.createElement("button");
 	deleteMeme.innerText = "Delete";
 	deleteMeme.className = "delete";
     memeDiv.append(deleteMeme);
