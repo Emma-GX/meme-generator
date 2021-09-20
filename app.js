@@ -11,7 +11,7 @@ form.addEventListener("submit", (e) => {
 	e.preventDefault();
 
 	// Creates an empty div
-	memeDiv = document.createElement("div");
+	let memeDiv = document.createElement("div");
 	memeDiv.classList.add("container");
 	document.body.appendChild(memeDiv);
 
